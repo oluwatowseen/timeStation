@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Station</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" >    
+</head>
+<body>
+    <content>
+        <div class="container timePad">
+            <div class="header">
+                <div class="headerLogo">
+                    <a href="index.html"><img src="images/headerlogo.png" alt="header logo"></a>
+                </div>
+                <div class="follow headerProfile pull-right">
+                    <b>ThoughThru | </b> sakaafz@gmail.com - <a href="#"> My Profile</a>
+                </div>
+            </div>
+            <nav role="navigation">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="rightBorder"><a href="account_home.html"><b>Home</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="Employees.html"><b>Employees</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="departments.html"><b>Departments</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="reports.html"><b>Reports</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="setting.html"><b>Settings</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="support.html"><b>Support</b></a></li>
+                    <li role="presentation" class="pull-right"><a href="index.html"><button class="btn btn-default">Logoff</button></a></li>
+                </ul>
+            </nav>
+            <div class="reports">
+                <h3>Reports</h3>
+                <div class="reporter">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="reportContainer">
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="selectReport" class="col-sm-4 control-label formAlign" style="margin-top: -5px">Select Report:</label>
+                                        <div class="col-sm-6" style="padding-left: 0px">
+                                            <select class="form-control chosenSelect" id="selectReport">
+                                                <option>- Please Select</option>
+                                                <option>Attendance Counter</option>
+                                                <option>Attendance-Only</option>
+                                                <option>Current Employee Status</option>
+                                                <option>Daily Attendance &amp; Absence</option>
+                                                <option>Department Members</option>
+                                                <option>Department Summary</option>
+                                                <option>Employee Activity</option>
+                                                <option>Employee Daily Summary</option>
+                                                <option>Employee Daily Summary - One Week</option>
+                                                <option>Employee Daily Summary - Two Weeks</option>
+                                                <option>Employee Details</option>
+                                                <option>Employee List</option>
+                                                <option>Employee Permissions</option>
+                                                <option>Employee Summary</option>
+                                                <option>Inactive Employees</option>
+                                                <option>Manual Time Adjustments</option>
+                                                <option>Payroll Export - Ctuit</option>
+                                                <option>Payroll Export - Paychex</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="parameters">
+                                        <p class="center">parameters</p>
+                                        <div class="form-group row">
+                                            <div class="col-xs-4 formAlign">
+                                                <label for="selectReport" class="control-label">Start Date:</label>
+                                            </div>
+                                            <div class="col-xs-8" style="padding-left: 0px">
+                                                    
+                                                    <input type="text" class="pickDate col-xs-4" id="datepicker">
+                                                
+                                                
+                                                    <label for="endDate" class="col-xs-4 formAlign" style="margin-left: -15px">End Date:</label>
+                                                
+                                                
+                                                    <input type="text" class="pickDate col-xs-4">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-5 col-xs-offset-4" style="padding-left: 0px">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        Show Sub Totals
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" value="" checked>
+                                                        Print Separate Pages
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="selectReport" class="col-xs-4 control-label formAlign" style="margin-top: -5px">Select Employee:</label>
+                                            <div class="col-xs-3" style="padding-left: 0px">
+                                                <select class="form-control chosenSelect" id="selectReport">
+                                                    <option selected>(All Employees)</option>
+                                                    <option>ALLAN &AMP; CO.</option>
+                                                    <option>ALLAN &AMP; CO.</option>
+                                                    <option>PTL</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="selectReport" class="col-xs-4 control-label formAlign" style="margin-top: -5px">Select Department:</label>
+                                            <div class="col-xs-4" style="padding-left: 0px">
+                                                <select class="form-control chosenSelect" id="selectReport">
+                                                    <option selected>(All Departments)</option>
+                                                    <option>INBOUND</option>
+                                                    <option>Marketing</option>
+                                                    <option>Outbound</option>
+                                                    <option>SIGNED OUT</option>
+                                                    <option>TRADE</option>
+                                                    <option>[Deleted] ALLAN &amp; CO.</option>
+                                                    <option>[Deleted] GBL</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="selectReport" class="col-xs-4 control-label formAlign" style="margin-top: -5px">Select Employee:</label>
+                                            <div class="col-xs-3" style="padding-left: 0px">
+                                                <select class="form-control chosenSelect" id="selectReport">
+                                                    <option selected>(All)</option>
+                                                    <option>IK1 Entry</option>
+                                                    <option>Lorry Park Entry</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-8 col-sm-4 formAlign" style="padding-right: 30px">
+                                          <button type="submit" class="btn btn-success" style="padding: 6px 20px"><b>Run Report</b></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="record">
+                                <div class="blueBox">
+                                    <div class="blueboxHeader">
+                                        <b>Records: 0</b>
+                                    </div>
+                                    <div class="blueboxContent">
+                                        <p class="center">No Records Found for your Criteria</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div><!--close timePad-->
+    </content>
+    <footer>
+        <div class="footerLinks">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" class="noBorder">Contact us</a>
+        </div>
+        <div class="footerButton">
+            <a href="#"><button type="button" class="btn"><span class="fa fa-twitter"></span> Follow @MyTimeStation</button></a>
+        </div>
+        <div class="footerCopy">
+            copyright &copy; 2011-2017 <a href="#">TimeStation</a>, LLC. All Rights Reserved.
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/myjs.js"></script>
+    <script>
+        $(document).ready(function () {
+            $( ".pickDate" ).datepicker();
+            $('.chosenSelect').chosen()
+        });
+    </script>
+</body>
+</html>

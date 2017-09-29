@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Station</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" >    
+</head>
+<body>
+    <content>
+        <div class="container timePad">
+            <div class="header">
+                <div class="headerLogo">
+                    <a href="index.html"><img src="images/headerlogo.png" alt="header logo"></a>
+                </div>
+                <div class="follow headerProfile pull-right">
+                    <b>ThoughThru | </b> sakaafz@gmail.com - <a href="#"> My Profile</a>
+                </div>
+            </div>
+            <nav role="navigation">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="rightBorder"><a href="account_home.html"><b>Home</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="Employees.html"><b>Employees</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="departments.html"><b>Departments</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="reports.html"><b>Reports</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="setting.html"><b>Settings</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="support.html"><b>Support</b></a></li>
+                    <li role="presentation" class="pull-right"><a href="index.html"><button class="btn btn-default">Logoff</button></a></li>
+                </ul>
+            </nav>
+            <div class="createDepartment">
+                <h3>Create New Department</h3>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="createNewDepartment">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="departmentName" class="col-sm-3 control-label">Department Name:</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="departmentName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="departmentType" class="col-sm-3 control-label">Department Type:</label>
+                                    <div class="col-sm-4">
+                                        <select class="form-control" id="departmentType">
+                                            <option>Department</option>
+                                            <option>Class</option>
+                                            <option>Client</option>
+                                            <option>Group</option>
+                                            <option>Job</option>
+                                            <option>Job site</option>
+                                            <option>Location</option>
+                                            <option>Office</option>
+                                            <option>Project</option>
+                                            <option>Task</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Reporting:</label>
+                                    <div class="col-sm-7" style="margin-top: 7px;">
+                                        <input type="checkBox"> Exclude from Reports<br><span>Exclude activity within this department from all reports.</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label" style="padding: 0px">Automatic Time Deduction:</label>
+                                    <div class="col-sm-9">
+                                        <input type="checkBox"> Use Company Settings
+                                        <div class="row" style="margin-top: 15px;">
+                                            <div class="col-sm-5">
+                                                <div class="form-group">
+                                                    <label for="departmentType" class="col-xs-3 control-label">Deduct:</label>
+                                                    <div class="col-xs-9">
+                                                        <select class="form-control" id="departmentType">
+                                                            <option>None</option>
+                                                            <option>10 Minutes</option>
+                                                            <option>15 Minutes</option>
+                                                            <option>30 Minutes</option>
+                                                            <option>45 Minutes</option>
+                                                            <option>1 Hour</option>
+                                                            <option>90 Minutes</option>
+                                                            <option>2 Hours</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-7">
+                                                <div class="form-group">
+                                                    <label for="departmentType" class="col-xs-3 control-label" style="padding: 7px 0px 0px 0px ">For Every:</label>
+                                                    <div class="col-xs-4">
+                                                        <select class="form-control" id="departmentType">
+                                                            <option> - </option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                            <option>7</option>
+                                                            <option>8</option>
+                                                            <option>9</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                            <option>12</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-5" style="padding: 7px 0px 0px 0px ">
+                                                        consecutive hours
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="pull-right loginMargin">
+                                        <button type="submit" class="btn btn-success"><b> Create New Department</b></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div><!--close timePad-->
+    </content>
+    <footer>
+        <div class="footerLinks">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" class="noBorder">Contact us</a>
+        </div>
+        <div class="footerButton">
+            <a href="#"><button type="button" class="btn"><span class="fa fa-twitter"></span> Follow @MyTimeStation</button></a>
+        </div>
+        <div class="footerCopy">
+            copyright &copy; 2011-2017 <a href="#">TimeStation</a>, LLC. All Rights Reserved.
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+</body>
+</html>

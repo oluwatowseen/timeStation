@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Station</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" >    
+</head>
+<body>
+    <content>
+        <div class="container timePad">
+            <div class="header">
+                <div class="headerLogo">
+                    <a href="index.html"><img src="images/headerlogo.png" alt="header logo"></a>
+                </div>
+                <div class="follow headerProfile pull-right">
+                    <b>ThoughThru | </b> sakaafz@gmail.com - <a href="#"> My Profile</a>
+                </div>
+            </div>
+            <nav role="navigation">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="rightBorder"><a href="account_home.html"><b>Home</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="Employees.html"><b>Employees</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="departments.html"><b>Departments</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="reports.html"><b>Reports</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="#.html"><b>Settings</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="#.html"><b>Support</b></a></li>
+                    <li role="presentation" class="pull-right"><a href="index.html"><button class="btn btn-default">Logoff</button></a></li>
+                </ul>
+            </nav>
+            <div class="employees">
+                <h3>Employees</h3>
+                <div class="employeeContainer">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="employeeSearch">
+                                <div class="row">
+                                    <div class="col-md-5 noPadding">
+                                        <div class="form-group">
+                                            <label class="col-xs-3 control-label formAlign noPadding formMargin">Search:</label>
+                                            <div class="col-xs-9">
+                                                <input type="Search" class="form-control">
+                                                <span>Search by Name, Title, ID, Email</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 noPadding">
+                                        <div class="form-group">
+                                            <label for="department" class="col-sm-4 control-label formAlign formMargin noPadding">Department:</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-control" id="departmentType">
+                                                    <option>- All Departments</option>
+                                                    <option>Class</option>
+                                                    <option>Client</option>
+                                                    <option>Group</option>
+                                                    <option>Job</option>
+                                                    <option>Job site</option>
+                                                    <option>Location</option>
+                                                    <option>Office</option>
+                                                    <option>Project</option>
+                                                    <option>Task</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label formAlign noPadding">Status:</label>
+                                            <div class="col-sm-8">
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> All
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> In
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Out
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox col-sm-8 col-sm-offset-4">
+                                            <label>
+                                                <input type="checkbox" value="">Show Deleted Employees
+                                          </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button class="btn btn-success"><b>Search</b></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="employeeButton">
+                                <ul>
+                                    <li><a href="account_createEmployee.html"><button class="btn btn-success"><span class="fa fa-plus"></span> <b> Create New Employee </b></button></a></li>
+                                    <li><a href=""><button class="btn btn-success"><span class="fa fa-print"></span> <b> Print Cards </b></button></a></li>
+                                </ul>
+                            </div>
+                            <div class="blueBox">
+                                <div class="blueboxHeader">
+                                    <b>Employees (3)</b>
+                                </div>
+                                <div class="blueboxContent">
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="center">
+                                                    <label>
+                                                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                                    </label>
+                                                </td>
+                                                <td><b>Name</b></td>
+                                                <td><b>Department</b></td>
+                                                <td><b>Title</b></td>
+                                                <td class="center"><b>Status</b></td>
+                                                <td><b>Last Activity</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">
+                                                    <label>
+                                                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                                    </label>
+                                                </td>
+                                                <td><a href="#">ALLAN &amp; CO.</a></td>
+                                                <td>Trade</td>
+                                                <td>F &amp; V</td>
+                                                <td class="center"><span class="fa fa-circle statusIn"></span></td>
+                                                <td>In at 1:04 PM On 09/16/2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">
+                                                    <label>
+                                                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                                    </label>
+                                                </td>
+                                                <td><a href="#">ALLAN &amp; CO.</a></td>
+                                                <td>Trade</td>
+                                                <td>F &amp; V</td>
+                                                <td class="center"><span class="fa fa-circle statusOut"></span></td>
+                                                <td>In at 1:27 AM On 09/16/2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center">
+                                                    <label>
+                                                        <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                                    </label>
+                                                </td>
+                                                <td><a href="#">PTL</a></td>
+                                                <td>Trade</td>
+                                                <td>F &amp; V</td>
+                                                <td class="center"><span class="fa fa-circle statusOut"></span></td>
+                                                <td>In at 2:25 AM On 09/16/2017</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+        </div><!--close timePad-->
+    </content>
+    <footer>
+        <div class="footerLinks">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" class="noBorder">Contact us</a>
+        </div>
+        <div class="footerButton">
+            <a href="#"><button type="button" class="btn"><span class="fa fa-twitter"></span> Follow @MyTimeStation</button></a>
+        </div>
+        <div class="footerCopy">
+            copyright &copy; 2011-2017 <a href="#">TimeStation</a>, LLC. All Rights Reserved.
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+</body>
+</html>

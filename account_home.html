@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Station</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" >    
+</head>
+<body>
+    <content>
+        <div class="container timePad">
+            <div class="header">
+                <div class="headerLogo">
+                    <a href="index.html"><img src="images/headerlogo.png" alt="header logo"></a>
+                </div>
+                <div class="follow headerProfile pull-right">
+                    <b>ThoughThru | </b> sakaafz@gmail.com - <a href="#"> My Profile</a>
+                </div>
+            </div>
+            <nav role="navigation">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="rightBorder"><a href="account_home.html"><b>Home</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="Employees.html"><b>Employees</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="departments.html"><b>Departments</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="reports.html"><b>Reports</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="setting.html"><b>Settings</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="support.html"><b>Support</b></a></li>
+                    <li role="presentation" class="pull-right"><a href="index.html"><button class="btn btn-default">Logoff</button></a></li>
+                </ul>
+            </nav>
+            <div class="accountHome">
+                <h3>Account Home</h3>
+                <div class="accountContent">
+                    <div class="row boxMargin">
+                        <div class="col-md-7">
+                            <div class="blueBox">
+                                <div class="blueboxHeader">
+                                    <b>Recent Activity</b>
+                                </div>
+                                <div class="blueboxContent">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="center"><b>Status</b></td>
+                                                <td><b>Name</b></td>
+                                                <td><b>Last Activity</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center"><span class="fa fa-circle statusIn"></span></td>
+                                                <td><a href="#">ALLAN &amp; CO.</a></td>
+                                                <td>In at 1:04 PM On 09/16/2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center"><span class="fa fa-circle statusOut"></span></td>
+                                                <td><a href="#"> PTL </a></td>
+                                                <td>Out at 2:25 AM On 09/07/2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="center"><span class="fa fa-circle statusOut"></span></td>
+                                                <td><a href="#">ALLAN &amp; CO. </a></td>
+                                                <td>Out at 1:27 AM On 09/07/2017</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-offset-1">
+                             <div class="blueBox">
+                                <div class="blueboxHeader">
+                                    <b>Shortcuts</b>
+                                </div>
+                                <div class="blueboxContent center">
+                                    <div class="shortcutButton">
+                                        <a href="account_createEmployee.html"><button class="btn btn-success" style="padding: 6px 16px;"><span class="fa fa-plus"></span> Create New Employee</button></a>
+                                        <a href="createDepartment.html"><button class="btn btn-success"><span class="fa fa-plus"></span> Create New Department</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row boxMargin">
+                        <div class="col-md-7">
+                            <div class="blueBox">
+                                <div class="blueboxHeader">
+                                    <b>Departments</b>
+                                </div>
+                                <div class="blueboxContent">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>Department Name</b></td>
+                                                <td><b>Employees</b></td>
+                                                <td><b>In</b></td>
+                                                <td><b>Out</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>INBOUND</td>
+                                                <td style="padding-left: 35px">0</td>
+                                                <td style="padding-left: 5px">0</td>
+                                                <td style="padding-left: 14px">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Marketing</td>
+                                                <td style="padding-left: 35px">0</td>
+                                                <td style="padding-left: 5px">0</td>
+                                                <td style="padding-left: 14px">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Outbound</td>
+                                                <td style="padding-left: 35px">0</td>
+                                                <td style="padding-left: 5px">0</td>
+                                                <td style="padding-left: 14px">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SIGNED OUT</td>
+                                                <td style="padding-left: 35px">0</td>
+                                                <td style="padding-left: 5px">0</td>
+                                                <td style="padding-left: 14px">0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>TRADE</td>
+                                                <td style="padding-left: 35px">3</td>
+                                                <td style="padding-left: 5px">1</td>
+                                                <td style="padding-left: 14px">2</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div><!--close timePad-->
+    </content>
+    <footer>
+        <div class="footerLinks">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" class="noBorder">Contact us</a>
+        </div>
+        <div class="footerButton">
+            <a href="#"><button type="button" class="btn"><span class="fa fa-twitter"></span> Follow @MyTimeStation</button></a>
+        </div>
+        <div class="footerCopy">
+            copyright &copy; 2011-2017 <a href="#">TimeStation</a>, LLC. All Rights Reserved.
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Station</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" >    
+</head>
+<body>
+    <content>
+        <div class="container timePad">
+            <div class="header">
+                <div class="headerLogo">
+                    <a href="index.html"><img src="images/headerlogo.png" alt="header logo"></a>
+                </div>
+                <div class="follow headerProfile pull-right">
+                    <b>ThoughThru | </b> sakaafz@gmail.com - <a href="#"> My Profile</a>
+                </div>
+            </div>
+            <nav role="navigation">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="rightBorder"><a href="account_home.html"><b>Home</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="Employees.html"><b>Employees</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="departments.html"><b>Departments</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="reports.html"><b>Reports</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="setting.html"><b>Settings</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="support.html"><b>Support</b></a></li>
+                    <li role="presentation" class="pull-right"><a href="index.html"><button class="btn btn-default">Logoff</button></a></li>
+                </ul>
+            </nav>
+            <div class="createAdmin">
+                <h3>Create Administrator</h3>
+                <div class="row adminContent">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="createAdminForm">
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="AdminName" class="col-xs-4 control-label">Administrator Name:</label>
+                                    <div class="col-xs-8">
+                                        <input type="text" class="form-control" id="AdminName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-xs-4 control-label">Email:</label>
+                                    <div class="col-xs-8">
+                                        <input type="text" class="form-control" id="email">
+                                        <span>An Email invitation will be sent to this address to create account password</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-4 formAlign">
+                                        <label for="radio" class="control-label">Department Access:</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="allDepartment" id="" value="" checked>
+                                                <b>All Departments</b>
+                                            </label>
+                                        </div>
+                                        <div class=" radio">
+                                            <label>
+                                                <input type="radio" name="allDepartment" id="" value="">
+                                                <b>Specific Departments - </b>
+                                                <span>Select Departments below </span>
+                                            </label>
+                                        </div>
+                                        <div class="specificDepartments">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    INBOUND
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Marketing
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Outbound
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    SIGNED OUT
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    TRADE
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="permission center">
+                                    Permissions
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-4 formAlign">
+                                        <label for="radio" class="control-label">Permissions:</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="permission" id="" value="" checked>
+                                                <b>Full Permissions</b>
+                                            </label>
+                                        </div>
+                                        <div class=" radio">
+                                            <label>
+                                                <input type="radio" name="permission" id="" value="">
+                                                <b>Limited Permissions - </b>
+                                                <span>Administrators can view employees and departments. You can select additional permissions below </span>
+                                            </label>
+                                        </div>
+                                        <div class="limitedPermission">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Create &amp; Edit Administrators
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Create &amp; Edit Departments
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Create &amp; Edit Employees
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Create Time Entries
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Edit Company Settings
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Edit Time Entries
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Manage Billing Plan
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Print Employee Cards
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    Run Reports
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    View GPS Location Information
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    View Pay Information
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-8 col-sm-4 formAlign" style="padding-right: 30px">
+                                      <button type="submit" class="btn btn-success" style="padding: 6px 20px"><b>Create Administrator</b></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div><!--close timePad-->
+    </content>
+    <footer>
+        <div class="footerLinks">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" class="noBorder">Contact us</a>
+        </div>
+        <div class="footerButton">
+            <a href="#"><button type="button" class="btn"><span class="fa fa-twitter"></span> Follow @MyTimeStation</button></a>
+        </div>
+        <div class="footerCopy">
+            copyright &copy; 2011-2017 <a href="#">TimeStation</a>, LLC. All Rights Reserved.
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+</body>
+</html>

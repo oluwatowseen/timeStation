@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Station</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" >    
+</head>
+<body>
+    <content>
+        <div class="container timePad">
+            <div class="header">
+                <div class="headerLogo">
+                    <a href="index.html"><img src="images/headerlogo.png" alt="header logo"></a>
+                </div>
+                <div class="follow headerProfile pull-right">
+                    <b>ThoughThru | </b> sakaafz@gmail.com - <a href="#"> My Profile</a>
+                </div>
+            </div>
+            <nav role="navigation">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="rightBorder"><a href="account_home.html"><b>Home</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="Employees.html"><b>Employees</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="departments.html"><b>Departments</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="reports.html"><b>Reports</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="setting.html"><b>Settings</b></a></li>
+                    <li role="presentation" class="rightBorder"><a href="support.html"><b>Support</b></a></li>
+                    <li role="presentation" class="pull-right"><a href="index.html"><button class="btn btn-default">Logoff</button></a></li>
+                </ul>
+            </nav>
+            <div class="createEmployee">
+                <h3>Create New Employee</h3>
+                <div class="createEmployeeForm">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="employeeForm">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="name" class="col-xs-3 control-label" style="padding-right: 0px">Name:</label>
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="newDEpartment" class="col-xs-3 control-label" style="padding-right: 0px">Department:</label>
+                                        <div class="col-xs-9">
+                                            <input type="text" class="form-control" id="newDEpartment">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="department" class="col-xs-3 control-label" style="padding-right: 0px">Department:</label>
+                                        <div class="col-xs-4">
+                                            <select class="form-control" id="department">
+                                                <option>- Please Select</option>
+                                                <option>- New Department</option>
+                                                <option>INBOUND</option>
+                                                <option>Marketing</option>
+                                                <option>Outbound</option>
+                                                <option>SIGNED OUT</option>
+                                                <option>TRADE</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="optional">
+                                        <div class=" col-xs-offset-3 formHeader">
+                                            <span class="text">Optional</span>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="employeeId" class="col-xs-3 control-label" style="padding-right: 0px">Employee ID:</label>
+                                            <div class="col-xs-9">
+                                                <input type="text" class="form-control" id="employeeId">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="title" class="col-xs-3 control-label" style="padding-right: 0px">Title:</label>
+                                            <div class="col-xs-9">
+                                                <input type="text" class="form-control" id="title">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="hourlyRate" class="col-xs-3 control-label" style="padding-right: 0px">Hourly Rate:</label>
+                                            <div class="col-xs-9">
+                                                <input type="text" class="form-control" id="hourlyRate">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pin" class="col-xs-3 control-label" style="padding-right: 0px">4-Digit PIN:</label>
+                                            <div class="col-xs-9">
+                                                <input type="text" class="form-control" id="pin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification">
+                                        <h5 class="center">Instant Notification</h5>
+                                        <div class="form-group">
+                                            <label class="col-xs-3 control-label" style="padding-right: 0px">Notifications:</label>
+                                            <div class="col-xs-9" style="margin-top: 7px;">
+                                                <input type="checkBox" value="1" class="notify"> Send EMail notification when employee checks-in or out
+                                            </div>
+                                        </div>
+                                        <div class="form-group reveal" style="display: none;">
+                                            <div class="col-sm-1 col-sm-offset-3">
+                                                <label for="email" class="control-label" style="padding-right: 0px">Email:</label>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <input type="text" class="form-control" id="email"><br>
+                                                <span>Notifications will be sent to this email Address<br>Multiple email addresses must be comma-separated</span><br>
+                                                <input type="checkBox"> Send Check-In Notification<br>
+                                                <input type="checkBox"> Send Check-Out Notification
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="employeeAccess">
+                                        <h5 class="center">TimeStation Access</h5>
+                                        <div class="form-group">
+                                            <label for="email" class="col-xs-3 control-label" style="padding-right: 0px">Email:</label>
+                                            <div class="col-xs-9">
+                                                <input type="text" class="form-control" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xs-3 control-label" style="padding-right: 0px">Password:</label>
+                                            <div class="col-xs-9">
+                                                <p class="form-control-static">An Email invitation will be sent to create an account password</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xs-3 control-label" style="padding-right: 0px">Permissions:</label>
+                                            <div class="col-xs-7" style="margin-top: 7px;">
+                                                <input type="checkBox"> <b>Login to the TimeStation App</b><br><span>Employee can login with their Email and Password to the TimeStation Mobile App</span>
+                                                <div class="logintoApp">
+                                                    <input type="checkBox"> Allow other Employees<br><span>Other employees can Punch In &amp; Out from this employee's TimeStaion Mobile App</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-7 col-xs-offset-3" style="margin-top: 7px;">
+                                                <input type="checkBox"> <b>Login to the TimeStation Site</b><br><span>Employee can login with their Email and Password to the TimeStation Website</span>
+                                                <div class="logintoApp">
+                                                    <input type="checkBox"> Create Time Entries<br>
+                                                    <input type="checkBox"> Edit Time Entries<br>
+                                                    <input type="checkBox"> Punch In &amp; Out<br>
+                                                    <input type="checkBox"> Run Reports<br>
+                                                    <input type="checkBox"> View GPS Location Information<br>
+                                                    <input type="checkBox"> View Pay Information<br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="createNewEmployeeButton pull-right">
+                                    <div class="clearfix">
+                                        <button class="btn btn-success">Create New Employee</button>
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <p class="center"> For batch employee import,<a href="#"> download </a> and fill out thr employee import template then Email it to <a href="#"></a> Support@MyTimeStation.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div><!--close timePad-->
+    </content>
+    <footer>
+        <div class="footerLinks">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#" class="noBorder">Contact us</a>
+        </div>
+        <div class="footerButton">
+            <a href="#"><button type="button" class="btn"><span class="fa fa-twitter"></span> Follow @MyTimeStation</button></a>
+        </div>
+        <div class="footerCopy">
+            copyright &copy; 2011-2017 <a href="#">TimeStation</a>, LLC. All Rights Reserved.
+        </div>
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myjs.js"></script>
+</body>
+</html>
