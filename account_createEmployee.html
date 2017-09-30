@@ -67,8 +67,8 @@
                                         </div>
                                     </div>
                                     <div class="optional">
-                                        <div class=" col-xs-offset-3 formHeader">
-                                            <span class="text">Optional</span>
+                                        <div class="formHeader">
+                                            <span>Optional</span>
                                             <div class="line"></div>
                                         </div>
                                         <div class="form-group">
@@ -97,7 +97,10 @@
                                         </div>
                                     </div>
                                     <div class="notification">
-                                        <h5 class="center">Instant Notification</h5>
+                                        <div class="formHeader">
+                                            <span>Instant notification</span>
+                                            <div class="line"></div>
+                                        </div>
                                         <div class="form-group">
                                             <label class="col-xs-3 control-label" style="padding-right: 0px">Notifications:</label>
                                             <div class="col-xs-9" style="margin-top: 7px;">
@@ -117,7 +120,10 @@
                                         </div>
                                     </div>
                                     <div class="employeeAccess">
-                                        <h5 class="center">TimeStation Access</h5>
+                                        <div class="formHeader">
+                                            <span>Time Station</span>
+                                            <div class="line"></div>
+                                        </div>
                                         <div class="form-group">
                                             <label for="email" class="col-xs-3 control-label" style="padding-right: 0px">Email:</label>
                                             <div class="col-xs-9">
@@ -133,14 +139,14 @@
                                         <div class="form-group">
                                             <label class="col-xs-3 control-label" style="padding-right: 0px">Permissions:</label>
                                             <div class="col-xs-7" style="margin-top: 7px;">
-                                                <input type="checkBox"> <b>Login to the TimeStation App</b><br><span>Employee can login with their Email and Password to the TimeStation Mobile App</span>
-                                                <div class="logintoApp">
+                                                <input type="checkBox" id="logApp"> <b>Login to the TimeStation App</b><br><span>Employee can login with their Email and Password to the TimeStation Mobile App</span>
+                                                <div class="logintoApp" id="logAppDisplay" style="display: none;">
                                                     <input type="checkBox"> Allow other Employees<br><span>Other employees can Punch In &amp; Out from this employee's TimeStaion Mobile App</span>
                                                 </div>
                                             </div>
                                             <div class="col-xs-7 col-xs-offset-3" style="margin-top: 7px;">
-                                                <input type="checkBox"> <b>Login to the TimeStation Site</b><br><span>Employee can login with their Email and Password to the TimeStation Website</span>
-                                                <div class="logintoApp">
+                                                <input type="checkBox" id="logSite"> <b>Login to the TimeStation Site</b><br><span>Employee can login with their Email and Password to the TimeStation Website</span>
+                                                <div class="logintoApp" id="logSiteDisplay" style="display: none;">
                                                     <input type="checkBox"> Create Time Entries<br>
                                                     <input type="checkBox"> Edit Time Entries<br>
                                                     <input type="checkBox"> Punch In &amp; Out<br>

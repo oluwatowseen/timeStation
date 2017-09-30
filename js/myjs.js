@@ -19,4 +19,37 @@ $(document).ready(function(){
             $('.reveal').hide()
         }
     })
+    $('#logApp').change(function(){
+        if(this.checked){
+            $('#logAppDisplay').show()
+        }else{
+            $('#logAppDisplay').hide()
+        }
+    })
+    $('#logSite').change(function(){
+        if(this.checked){
+            $('#logSiteDisplay').show()
+        }else{
+            $('#logSiteDisplay').hide()
+        }
+    })
+    $('.companySettings').change(function(){
+        if(this.checked){
+            $('.deduct').hide()
+        }else{
+            $('.deduct').show()
+        }
+    })
+    $('#show').change(function(){
+        if(this.checked){
+            $('.limitedPermission').show()
+        }else{
+            $('.limitedPermission').hide()
+        }
+    })
+    $('#hide').change(function(){
+        if(this.checked){
+            $('.limitedPermission').hide()
+        }
+    })
 });
